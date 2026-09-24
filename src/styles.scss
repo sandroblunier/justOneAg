@@ -1,0 +1,101 @@
+@use '@angular/material' as mat;
+@use './m3-theme' as fieldwork;
+
+// ---------------------------------------------------------------------------
+// Fieldwork theme — a custom Material 3 theme (forest green + brass) rather
+// than a stock palette. $light-theme was generated from two seed colors via:
+//   ng generate @angular/material:m3-theme --primary-color="#305f3a" --secondary-color="#b3852f"
+// Re-run that command with different hex values (see src/m3-theme.scss) to
+// reskin every mat-* component at once. color="accent" maps to the brass
+// secondary color; color="primary" maps to the forest green.
+// ---------------------------------------------------------------------------
+
+html {
+  color-scheme: light;
+  @include mat.core();
+  @include mat.all-component-themes(fieldwork.$light-theme);
+}
+
+// ---------------------------------------------------------------------------
+// Global look and feel
+// ---------------------------------------------------------------------------
+
+:root {
+  --ink: #1c2620;
+  --paper: #eef0ea;
+  --forest: #305f3a;
+  --forest-dark: #1c2b20;
+  --brass: #b3852f;
+  --brass-light: #d7b374;
+  --line: rgba(28, 38, 32, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.65;
+  max-width: 60ch;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}

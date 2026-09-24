@@ -1,0 +1,54 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  height: 72px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: var(--ink);
+}
+
+.active-link {
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-button {
+    display: inline-flex;
+  }
+}

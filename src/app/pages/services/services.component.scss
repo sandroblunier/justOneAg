@@ -1,0 +1,52 @@
+.page-header {
+  padding-bottom: 24px;
+}
+
+.services-section {
+  padding-top: 0;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-card {
+  border-color: var(--line);
+  background: transparent;
+}
+
+.service-card mat-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.service-card mat-icon {
+  color: var(--forest);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.service-card p {
+  margin: 0;
+  color: rgba(28, 38, 32, 0.75);
+}
+
+.cta {
+  background: var(--brass-light);
+}
+
+.cta-inner {
+  padding: 64px 24px;
+}
+
+.cta-inner h2 {
+  margin-bottom: 20px;
+}

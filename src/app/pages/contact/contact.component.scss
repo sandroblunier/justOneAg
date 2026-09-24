@@ -1,0 +1,22 @@
+.page-header {
+  padding-bottom: 8px;
+}
+
+.contact-section {
+  padding-top: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 520px;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}

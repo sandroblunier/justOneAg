@@ -1,0 +1,61 @@
+.site-footer {
+  background: var(--forest-dark);
+  color: var(--paper);
+  padding: 56px 0 24px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(238, 240, 234, 0.16);
+}
+
+.footer-brand .brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-brand p {
+  margin-top: 8px;
+  color: rgba(238, 240, 234, 0.72);
+  max-width: 32ch;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(238, 240, 234, 0.85);
+}
+
+.footer-links a:hover {
+  color: var(--brass-light);
+}
+
+.footer-social {
+  display: flex;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.footer-social a {
+  color: var(--paper);
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(238, 240, 234, 0.6);
+}

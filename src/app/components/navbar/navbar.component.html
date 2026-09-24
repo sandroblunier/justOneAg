@@ -1,0 +1,35 @@
+<mat-toolbar class="navbar">
+  <div class="navbar-inner container">
+    <a routerLink="/" class="brand">Fieldwork</a>
+
+    <span class="spacer"></span>
+
+    <nav class="nav-links">
+      @for (link of navLinks; track link.path) {
+        <a
+          mat-button
+          [routerLink]="link.path"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: link.exact }"
+        >
+          {{ link.label }}
+        </a>
+      }
+    </nav>
+
+    <button
+      mat-icon-button
+      class="menu-button"
+      [matMenuTriggerFor]="mobileMenu"
+      aria-label="Open navigation menu"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #mobileMenu="matMenu">
+      @for (link of navLinks; track link.path) {
+        <a mat-menu-item [routerLink]="link.path">{{ link.label }}</a>
+      }
+    </mat-menu>
+  </div>
+</mat-toolbar>

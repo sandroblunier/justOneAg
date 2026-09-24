@@ -1,0 +1,41 @@
+.page-header {
+  padding-bottom: 24px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  max-width: 68ch;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  border-color: var(--line);
+  background: transparent;
+}
+
+.value-card mat-icon {
+  color: var(--forest);
+  margin-bottom: 12px;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.value-card p {
+  margin: 0;
+  color: rgba(28, 38, 32, 0.75);
+}
+
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

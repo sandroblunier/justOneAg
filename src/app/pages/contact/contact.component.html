@@ -1,0 +1,50 @@
+<section class="section page-header">
+  <div class="container">
+    <h1>Get in touch</h1>
+    <p>Tell us a bit about what you're working on. We read every message ourselves.</p>
+  </div>
+</section>
+
+<section class="section contact-section">
+  <div class="container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" placeholder="Your name" />
+        @if (name?.hasError('required') && name?.touched) {
+          <mat-error>Name is required</mat-error>
+        }
+        @if (name?.hasError('minlength') && name?.touched) {
+          <mat-error>Name is too short</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="you@example.com" />
+        @if (email?.hasError('required') && email?.touched) {
+          <mat-error>Email is required</mat-error>
+        }
+        @if (email?.hasError('email') && email?.touched) {
+          <mat-error>Enter a valid email address</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName="message" rows="5" placeholder="What are you building?"></textarea>
+        @if (message?.hasError('required') && message?.touched) {
+          <mat-error>Message is required</mat-error>
+        }
+        @if (message?.hasError('minlength') && message?.touched) {
+          <mat-error>Tell us a little more</mat-error>
+        }
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" class="submit-btn">
+        <mat-icon>send</mat-icon>
+        Send message
+      </button>
+    </form>
+  </div>
+</section>

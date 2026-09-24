@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="container hero-inner">
+    <h1>Design and code, done with care.</h1>
+    <p>
+      Fieldwork is a small studio building Material-driven web products for
+      teams who care about the details as much as the deadline.
+    </p>
+    <div class="hero-actions">
+      <a mat-raised-button color="accent" routerLink="/contact">Start a project</a>
+      <a class="ghost-btn" routerLink="/services">See our work</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>How we work</h2>
+    <div class="feature-grid">
+      @for (feature of features; track feature.title) {
+        <mat-card appearance="outlined" class="feature-card">
+          <mat-card-content>
+            <mat-icon class="feature-icon">{{ feature.icon }}</mat-icon>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <h2>Have a project in mind?</h2>
+    <p>
+      Tell us what you're building and we'll tell you honestly whether we're
+      the right fit for it.
+    </p>
+    <a mat-raised-button color="primary" routerLink="/contact">Start a conversation</a>
+  </div>
+</section>

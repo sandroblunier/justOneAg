@@ -1,0 +1,31 @@
+<section class="section page-header">
+  <div class="container">
+    <h1>Services</h1>
+    <p>A short list of what we actually do — not a menu of everything we could theoretically offer.</p>
+  </div>
+</section>
+
+<section class="section services-section">
+  <div class="container">
+    <div class="services-list">
+      @for (service of services; track service.title) {
+        <mat-card appearance="outlined" class="service-card">
+          <mat-card-content>
+            <mat-icon>{{ service.icon }}</mat-icon>
+            <div>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.text }}</p>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <h2>Want to talk through your project?</h2>
+    <a mat-raised-button color="primary" routerLink="/contact">Get in touch</a>
+  </div>
+</section>
