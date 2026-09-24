@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
     selector: 'app-services',
     imports: [RouterLink, MatCardModule, MatIconModule, MatButtonModule],
     templateUrl: './services.component.html',
-    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
