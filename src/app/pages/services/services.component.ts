@@ -5,11 +5,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-services',
-  standalone: true,
-  imports: [RouterLink, MatCardModule, MatIconModule, MatButtonModule],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.scss',
+    selector: 'app-services',
+    imports: [RouterLink, MatCardModule, MatIconModule, MatButtonModule],
+    templateUrl: './services.component.html',
+    styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
   services = [
