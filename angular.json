@@ -21,16 +21,10 @@
             "outputPath": "dist/fieldwork",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -73,10 +67,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }
@@ -84,9 +75,7 @@
   },
   "cli": {
     "analytics": false,
-    "schematicCollections": [
-      "angular-eslint"
-    ]
+    "schematicCollections": ["angular-eslint"]
   },
   "schematics": {
     "@schematics/angular:component": {

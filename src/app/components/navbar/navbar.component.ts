@@ -6,17 +6,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
-    selector: 'app-navbar',
-    imports: [
-        RouterLink,
-        RouterLinkActive,
-        MatToolbarModule,
-        MatButtonModule,
-        MatIconModule,
-        MatMenuModule,
-    ],
-    templateUrl: './navbar.component.html',
-    styleUrl: './navbar.component.scss'
+  selector: 'app-navbar',
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+  ],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
   navLinks = [

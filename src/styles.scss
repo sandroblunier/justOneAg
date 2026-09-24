@@ -98,5 +98,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: background-color 150ms ease, color 150ms ease;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
 }
