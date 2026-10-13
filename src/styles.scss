@@ -1,8 +1,8 @@
 @use '@angular/material' as mat;
-@use './m3-theme' as fieldwork;
+@use './m3-theme' as justoneag;
 
 // ---------------------------------------------------------------------------
-// Fieldwork theme — a custom Material 3 theme (forest green + brass) rather
+// JustOneAG theme — a custom Material 3 theme (forest green + brass) rather
 // than a stock palette. $light-theme was generated from two seed colors via:
 //   ng generate @angular/material:m3-theme --primary-color="#305f3a" --secondary-color="#b3852f"
 // Re-run that command with different hex values (see src/m3-theme.scss) to
@@ -14,7 +14,7 @@ html {
   color-scheme: light;
   @include mat.elevation-classes();
   @include mat.app-background();
-  @include mat.all-component-themes(fieldwork.$light-theme);
+  @include mat.all-component-themes(justoneag.$light-theme);
 }
 
 // ---------------------------------------------------------------------------

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fieldwork": {
+    "just-one-ag": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/fieldwork",
+            "outputPath": "dist/just-one-ag",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fieldwork:build:production"
+              "buildTarget": "just-one-ag:build:production"
             },
             "development": {
-              "buildTarget": "fieldwork:build:development"
+              "buildTarget": "just-one-ag:build:development"
             }
           },
           "defaultConfiguration": "development"

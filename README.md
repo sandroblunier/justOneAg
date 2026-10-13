@@ -1,4 +1,4 @@
-# Fieldwork — Angular + Angular Material starter
+# JustOneAG — Angular + Angular Material starter
 
 A small marketing site (Home, About, Services, Contact) built with Angular
 (standalone components, no NgModules) and Angular Material, with a custom
@@ -42,7 +42,7 @@ src/styles.scss              Custom Material theme + global styles
 
 ## Customizing
 
-- **Colors**: edit `$fieldwork-primary-palette` and `$fieldwork-accent-palette`
+- **Colors**: edit `$justoneag-primary-palette` and `$justoneag-accent-palette`
   in `src/styles.scss`. Every `mat-*` component (buttons, form field outlines,
   etc.) picks its color up from these automatically via `color="primary"` /
   `color="accent"`.
@@ -62,4 +62,4 @@ src/styles.scss              Custom Material theme + global styles
 npm run build
 ```
 
-Output goes to `dist/fieldwork/`.
+Output goes to `dist/just-one-ag/`.

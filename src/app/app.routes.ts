@@ -5,9 +5,9 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent, title: 'Fieldwork — Product design & engineering' },
-  { path: 'about', component: AboutComponent, title: 'About — Fieldwork' },
-  { path: 'services', component: ServicesComponent, title: 'Services — Fieldwork' },
-  { path: 'contact', component: ContactComponent, title: 'Contact — Fieldwork' },
+  { path: '', component: HomeComponent, title: 'JustOneAG — Product design & engineering' },
+  { path: 'about', component: AboutComponent, title: 'About — JustOneAG' },
+  { path: 'services', component: ServicesComponent, title: 'Services — JustOneAG' },
+  { path: 'contact', component: ContactComponent, title: 'Contact — JustOneAG' },
   { path: '**', redirectTo: '' },
 ];
